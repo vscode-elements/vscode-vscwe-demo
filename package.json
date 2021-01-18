@@ -1,10 +1,15 @@
 {
 	"name": "vscode-vscwe-demo",
 	"displayName": "VscodeVscweDemo",
-	"description": "VSCoed eElements Demo",
+	"description": "VSCode Elements Demo",
 	"version": "0.0.1",
+	"preview": true,
+	"publisher": "johndoe",
 	"engines": {
 		"vscode": "^1.52.0"
+	},
+	"repository": {
+		"url": "https://github.com/bendera/vscode-vscwe-demo.git"
 	},
 	"categories": [
 		"Other"
@@ -17,7 +22,7 @@
 		"commands": [
 			{
 				"command": "vscode-vscwe-demo.helloWorld",
-				"title": "Hello World"
+				"title": "Gears demo"
 			}
 		]
 	},
@@ -41,5 +46,9 @@
 		"mocha": "^8.1.3",
 		"typescript": "^4.1.2",
 		"vscode-test": "^1.4.1"
+	},
+	"dependencies": {
+		"@bendera/vscode-webview-elements": "^0.1.11-alpha.7",
+		"vscode-codicons": "0.0.13"
 	}
 }
